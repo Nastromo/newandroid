@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_events"
+            android:title="@string/my_events" />
+        <item
+            android:id="@+id/visited_events"
+            android:title="@string/visited_events" />
+        <item
+            android:id="@+id/my_locations"
+            android:title="@string/my_locations" />
+        <item
+            android:id="@+id/create_event"
+            android:title="@string/create_event" />
+        <item
+            android:id="@+id/add_location"
+            android:title="@string/add_location" />
+        <item
+            android:id="@+id/support"
+            android:title="@string/support" />
+        <item
+            android:id="@+id/exit"
+            android:title="@string/exit" />
+    </group>
+
+    <item
+        android:id="@+id/bottom_menu_title"
+        android:title="@string/bottom_menu_title">
+        <menu>
+            <item
+                android:id="@+id/subtext"
+                android:title="@string/subtext" />
+        </menu>
+    </item>
+
+</menu>

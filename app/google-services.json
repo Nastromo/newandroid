@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "347408815609",
+    "firebase_url": "https://facelocation-1516892013293.firebaseio.com",
+    "project_id": "facelocation-1516892013293",
+    "storage_bucket": "facelocation-1516892013293.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347408815609:android:477c7830383f868c",
+        "android_client_info": {
+          "package_name": "com.face_location.facelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347408815609-tj9beau2vemgh1er9s8h66l2itpngt7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoy1Su7q6_awb_w5rUYlVOM-C5-lh2hdI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

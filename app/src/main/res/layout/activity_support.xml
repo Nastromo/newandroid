@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.face_location.facelocation.StartActivity"
+    tools:ignore="MissingPrefix"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/backButtonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/left_arrow_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonBackView"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/back_to_map"
+        android:textColor="@color/colorText"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/backButtonImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterTitleLocationTip"
+        fontPath="fonts/OpenSans-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/question"
+        android:textColor="@color/colorText"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBackView" />
+
+    <LinearLayout
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/rec"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterTitleLocationTip">
+
+        <EditText
+            android:id="@+id/newLocationTitle"
+            fontPath="fonts/OpenSans-SemiBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rec_white"
+            android:hint="@string/event_hint"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorTextLight"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterTitleLocationTip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        fontPath="fonts/OpenSans-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/your_email"
+        android:textColor="@color/colorText"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInput" />
+
+    <LinearLayout
+        android:id="@+id/editTextInputView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/rec"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView">
+
+        <!-- inputType="textCapSentences|textNoSuggestions" убирает подчеркивание ошибок -->
+ail
+
+        <EditText
+            android:id="@+id/myEmail"
+            fontPath="fonts/OpenSans-SemiBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rec_white"
+            android:hint="@string/you_email_address"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorTextLight"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterTitleLocationTip" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/your_trouble"
+        android:textColor="@color/colorText"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInputView" />
+
+    <LinearLayout
+        android:id="@+id/editTextProblem"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/rec"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <!-- inputType="textCapSentences|textNoSuggestions" убирает подчеркивание ошибок -->
+
+        <EditText
+            android:id="@+id/problemTextEdit"
+            fontPath="fonts/OpenSans-SemiBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rec_white"
+            android:gravity="top"
+            android:hint="@string/help"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorTextLight"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterTitleLocationTip" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendIssue"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/rec_super_dark"
+        android:text="@string/send"
+        android:textColor="@color/colorYellow"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+

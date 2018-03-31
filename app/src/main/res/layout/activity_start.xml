@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.face_location.facelocation.StartActivity"
+    tools:ignore="MissingPrefix"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/logoMainscreen"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/facelogo" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrRippleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainDescriptor">
+
+        <Button
+            android:id="@+id/localize"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="@string/localing"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ripple_oval_localize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fontPath="fonts/OpenSans-Bold.ttf" />
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rb_color="#E8ECFB"
+            app:rb_duration="3000"
+            app:rb_radius="70dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="2.4">
+
+        </com.skyfishjy.library.RippleBackground>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/facelocationLikeLogo"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_uppercase"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoMainscreen" />
+
+    <TextView
+        android:id="@+id/mainDescriptor"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_descriptor"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facelocationLikeLogo" />
+
+    <TextView
+        android:id="@+id/tos"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tos_hint"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"/>
+
+</android.support.constraint.ConstraintLayout>

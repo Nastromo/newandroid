@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.face_location.facelocation">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GreyStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermsOfUse"
+            android:screenOrientation="portrait"
+            android:theme="@style/GreyStatusBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Return this block if fragments need for swiping, else delete before release -->
+        <!--
+           <activity
+           android:name=".AddLocationFirstFragment"
+           android:windowSoftInputMode="adjustResize"
+           android:label="@string/title_activity_new_location"
+           android:theme="@style/AppThemeScroll" />
+        -->
+        <!-- TODO android:windowSoftInputMode="adjustResize" - makes content jump under keyboard -->
+        <activity
+            android:name=".AddLocationFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddLocationSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddLocationThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddLocationFourthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventFourthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventFifthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventSixthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventSeventhActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventEighthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEventNinthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyAppActionsActivity"
+            android:label="@string/title_activity_my_app_actions"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LocalizedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyEventActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GroupChatUserChose" />
+        <activity android:name=".ChatActivity"></activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+
+</manifest>
